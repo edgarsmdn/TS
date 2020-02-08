@@ -25,10 +25,14 @@ def TS(f, max_iter, max_iter_LS, bounds, radius, reduce_iter, reduce_frac, max_t
     traj: (boolean) To output trajectory or not. Default is false
     
     --- output ---
-    f(sBest): (float) The best value of the funtion found in the optimization
-    sBest: (array) The best point in which the function was evaluated
-    trajectory: (matrix) Column 0: Number of iteration. Column 1: Value for current iteration. It stores the complete trajectory including LS iterations 
-    trajectory_sum_up: (matrix) Column 0: Number of iteration. Column 1: Value for current iteration. It stores only the iterations from TS but with the real number of iteration
+    Optimum: (class) Results with:
+        Optimum.f: (float) The best value of the funtion found in the optimization
+        Optimum.x: (array) The best point in which the function was evaluated
+        Optimum.traj_f: (array) Trajectory of function values (including LS iterations)
+        Optimum.traj_x: (array) Trajectory of positions (including LS iterations)
+        Optimum.traj_f_sum_up: (array) Trajectory of function values (including TS steps only). 
+                                        First column is number of total iterations.
+        Optimum.traj_x_sum_up: (array) Trajectory of positions (including TS steps only)
     '''
     # Initialize
     dim = len(bounds)
