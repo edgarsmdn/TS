@@ -1,7 +1,7 @@
 # Tabu Search
 
 <p align="center">
-<img src="https://github.com/edgarsmdn/SA/blob/master/SA_1.gif" width="500"> 
+<img src="https://github.com/edgarsmdn/TS/blob/master/TS_1.gif" width="500"> 
 </p>
 
 ## Development
