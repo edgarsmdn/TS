@@ -72,3 +72,7 @@ Optimum: (class) Results with:
 ### References
 
 Glover, F. (1986). Future Paths for Integer Programming and Links to Artificial Intelligence. Computers and Operations Research Vol. 13, 533-549.
+
+## License
+
+This repository contains a [MIT LICENSE](https://github.com/edgarsmdn/TS/blob/master/LICENSE)
