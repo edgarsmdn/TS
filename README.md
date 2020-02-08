@@ -51,10 +51,23 @@ TS(f, max_iter, max_iter_LS, bounds, radius, reduce_iter, reduce_frac, max_tabu_
 #### Outputs
 
 ```
-
+Optimum: (class) Results with:
+        Optimum.f: (float) The best value of the funtion found in the optimization
+        Optimum.x: (array) The best point in which the function was evaluated
+        Optimum.traj_f: (array) Trajectory of function values (including LS iterations)
+        Optimum.traj_x: (array) Trajectory of positions (including LS iterations)
+        Optimum.traj_f_sum_up: (array) Trajectory of function values (including TS steps only). 
+                                        First column is number of total iterations.
+        Optimum.traj_x_sum_up: (array) Trajectory of positions (including TS steps only)
 ```
 
 #### General information
+
+* The current stopping criteria is the maximum number of iterations specified by the user.
+
+* Within the Local Search (LS) framework that is performed at each major iteration of TS, the search neighborhood is reduced iteratively by ![eq](https://latex.codecogs.com/gif.latex?r%5E%7Bt&plus;1%7D%20%3D%20r_%7Bred%7D%20%7E%20r%5Et). A LS is performed at each major iteration of the Tabu Search algorithm.
+
+* The Local Search algorithm is contained in the utilities file *stoch_optim_utilities.py* 
 
 ### References
 
