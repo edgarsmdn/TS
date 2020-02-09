@@ -16,7 +16,7 @@ TS is usually used for discrete points but it can be extended for continuous fun
 
 ## Prerequisites
 
-The function requires Python 3.0 (or more recent versions).
+The function requires Python 3.0 (or more recent versions). The *stoch_optim_utilities.py* file (which contains common utilities needed in stochastic optimization algorithms) needs to be in the same directory as the function file *TS.py*.
 
 ## Functioning
 
